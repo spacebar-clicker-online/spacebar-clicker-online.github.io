@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spacebar Counter – Count Your Spacebar Presses Online</title>
+<meta name="description" content="Count every spacebar press with no time limit, or run 10 seconds to 5 minutes for endurance. Shows your total, pace and a per-second chart.">
+<link rel="canonical" href="https://spacebar-clicker-online.github.io/spacebar-counter">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="Spacebar Clicker">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spacebar Counter – Count Your Spacebar Presses Online">
+<meta property="og:description" content="Count every spacebar press with no time limit, or run 10 seconds to 5 minutes for endurance. Shows your total, pace and a per-second chart.">
+<meta property="og:url" content="https://spacebar-clicker-online.github.io/spacebar-counter">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#6a3cf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem("sbc_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="/style.css">
+<!-- Google AdSense: paste your AdSense <script> tag here after you sign up -->
+<!-- Google Analytics (optional): paste your gtag.js snippet here -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Spacebar Clicker","url":"https://spacebar-clicker-online.github.io/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Spacebar Counter","url":"https://spacebar-clicker-online.github.io/spacebar-counter","applicationCategory":"UtilityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Counts spacebar presses with an endless mode and long timed modes."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I stop the endless spacebar counter?","acceptedAnswer":{"@type":"Answer","text":"Press Enter, press Esc or click the Stop button. Your result card appears straight away."}},{"@type":"Question","name":"Is there a maximum count?","acceptedAnswer":{"@type":"Answer","text":"No. Endless mode keeps counting until you stop, and timed runs go up to 600 seconds using the Custom box."}},{"@type":"Question","name":"Can two people play on the same device?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use Endless mode for a relay, or take turns on the same timed mode and compare the recent runs list."}},{"@type":"Question","name":"Do my counts carry over between pages?","acceptedAnswer":{"@type":"Answer","text":"No. The Spacebar Counter keeps its own bests and history, separate from the Spacebar Clicker and the CPS Test."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spacebar-clicker-online.github.io/"},{"@type":"ListItem","position":2,"name":"Spacebar Counter","item":"https://spacebar-clicker-online.github.io/spacebar-counter"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><rect x="1" y="1" width="32" height="18" rx="5" fill="var(--brand)"/><rect x="1" y="1" width="32" height="15" rx="5" fill="var(--brand-2)"/><rect x="9" y="7" width="16" height="3" rx="1.5" fill="#fff"/></svg><span>Spacebar Clicker</span></a>
+    <nav aria-label="Main"><ul class="menu" id="menu"><li><a href="/">Spacebar Clicker</a></li><li><a href="/spacebar-counter" aria-current="page">Spacebar Counter</a></li><li><a href="/cps-test">CPS Test</a></li><li><a href="/guides">Guides</a></li><li><a href="/about">About</a></li></ul></nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Spacebar Counter</nav><div class="hero"><div class="eyebrow">Spacebar counter</div><h1>Spacebar Counter</h1><p class="lede">Endless mode is on by default: press Space and every hit is counted until you stop. Switch to a timed run for endurance challenges up to five minutes.</p></div><section class="tool" id="tool" data-mode="space" data-default="0" data-key="sbcount" aria-label="Spacebar counter">
+  <div class="modes" role="group" aria-label="Test duration">
+    <span class="modes-label">Time</span><button class="chip" type="button" data-t="0" aria-pressed="true">Endless</button><button class="chip" type="button" data-t="10" aria-pressed="false">10s</button><button class="chip" type="button" data-t="30" aria-pressed="false">30s</button><button class="chip" type="button" data-t="60" aria-pressed="false">60s</button><button class="chip" type="button" data-t="120" aria-pressed="false">120s</button><button class="chip" type="button" data-t="300" aria-pressed="false">300s</button>
+    <span class="custom"><label for="customSec">Custom</label><input id="customSec" type="number" min="1" max="600" placeholder="sec" inputmode="numeric"></span>
+    <span class="toggles"><button class="chip" id="soundBtn" type="button" aria-pressed="false">Sound off</button></span>
+  </div>
+  <div class="stats" aria-live="polite">
+    <div class="stat main"><b id="sHits">0</b><span>Hits</span></div>
+    <div class="stat"><b id="sTime">0.00</b><span id="sTimeLbl">Time left</span></div>
+    <div class="stat"><b id="sCps">0.00</b><span>Live CPS</span></div>
+    <div class="stat"><b id="sBest">–</b><span id="sBestLbl">Best CPS</span></div>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+  <div class="stage">
+    <div class="pad" id="pad" role="button" tabindex="0" aria-label="Spacebar. Press Space on your keyboard or tap here."><span class="legend" id="legend">Press <em>space</em> to start</span></div>
+    <p class="hint">Counting begins on your first press and runs until you stop it. Held keys count once. <kbd>Enter</kbd> restarts.</p>
+  </div>
+  <div class="actions">
+    <button class="btn primary" id="restartBtn" type="button">Restart <small>(Enter)</small></button>
+    <button class="btn" id="stopBtn" type="button" hidden>Stop</button>
+    <button class="btn" id="copyBtn" type="button" hidden>Copy score</button>
+  </div>
+  <div class="result" id="result" hidden>
+    <div class="result-head">
+      <div class="rank"><span id="rankName">–</span><small id="rankSub"></small></div>
+      <span class="badge" id="pbBadge" hidden>New personal best</span>
+    </div>
+    <div class="stats">
+      <div class="stat main"><b id="rHits">0</b><span>Total hits</span></div>
+      <div class="stat"><b id="rCps">0.00</b><span>Average CPS</span></div>
+      <div class="stat"><b id="rPeak">0</b><span>Best 1 second</span></div>
+      <div class="stat"><b id="rCons">0%</b><span>Consistency</span></div>
+    </div>
+    <div class="chart-box">
+      <canvas id="chart" role="img" aria-label="Hits per second during your run"></canvas>
+      <p class="chart-cap">Hits in each second of your run. Even bars mean a steady pace; falling bars show where your hand tired.</p>
+    </div>
+    <div class="ladder" id="ladder" aria-label="Speed ranks"></div>
+  </div>
+</section>
+<div class="panels">
+  <section class="card"><h2>Your personal bests</h2><div id="bestsBox"></div></section>
+  <section class="card"><h2>Recent runs</h2><div id="historyBox"></div><button class="linkbtn" id="clearBtn" type="button">Clear my scores</button></section>
+</div>
+<article class="content">
+<h2>Counter or clicker: what's the difference?</h2>
+<p>The two names are often used for the same thing, but they answer different questions. A <strong>clicker</strong> asks how fast you are: it fixes the time and measures the speed. A <strong>counter</strong> asks how many: it lets you keep going and simply tallies the presses. This page is set up for counting, with an endless mode first and longer timed runs for stamina. If you want a short speed test, the <a href="/">Spacebar Clicker</a> has 1, 5 and 10 second modes.</p>
+
+<h2>How the endless counter works</h2>
+<ul>
+<li>The count starts on your first press and the elapsed time runs upward.</li>
+<li>Press <kbd>Enter</kbd>, <kbd>Esc</kbd> or the Stop button to end the session and see your result card.</li>
+<li>Your pace is still measured, so you get an average CPS, your best second and a chart even without a time limit.</li>
+<li>Each endless session is saved to your recent runs with its length, so you can compare a 40-second session with a 3-minute one.</li>
+</ul>
+
+<h2>Challenges to try</h2>
+<p>A counter is more fun with a target. Here are a few that work well alone or with friends:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Challenge</th><th>How to play</th></tr></thead>
+<tbody>
+<tr><td><strong>Race to 100</strong></td><td>Use Endless mode and stop the moment you reach 100 hits. The lowest elapsed time wins.</td></tr>
+<tr><td><strong>The minute mile</strong></td><td>Pick 60s and aim to stay above 6 CPS for the whole minute. Check the chart to see if any second dropped below.</td></tr>
+<tr><td><strong>Relay</strong></td><td>Two or three people share one keyboard in Endless mode, swapping every 20 seconds. Add the totals for a team score.</td></tr>
+<tr><td><strong>Five-minute marathon</strong></td><td>Pick 300s. This is about pacing and staying relaxed, not speed. Swap thumbs whenever one starts to ache.</td></tr>
+<tr><td><strong>Steady hand</strong></td><td>Run 30s and try for a consistency score above 90 percent. It is harder than it sounds.</td></tr>
+</tbody></table></div>
+
+<h2>Looking after your hands in long sessions</h2>
+<p>Pressing one key hundreds of times in a row is a repetitive movement, and long runs can leave your thumb or wrist sore. Keep your wrist straight and supported, swap hands or thumbs when you feel tension, and take a break of a minute or two between long runs. If you feel pain, numbness or tingling, stop. A score is never worth an injury.</p>
+
+<h2>Is the count accurate?</h2>
+<p>The counter listens for the moment a key goes down and ignores the repeated signals your computer sends when a key is held. That means a sticky or held key cannot inflate the number. On very cheap keyboards a single press can occasionally register twice, which is called chatter. If your count jumps by two on single presses, try another keyboard. Our guide on <a href="/keyboard-and-spacebar-speed">keyboards and spacebar speed</a> explains why.</p>
+<div class="grid-links">
+<a href="/"><b>Spacebar Clicker</b><span>Timed spacebar speed test with live CPS</span></a>
+<a href="/spacebar-counter"><b>Spacebar Counter</b><span>Count every press with no time limit</span></a>
+<a href="/cps-test"><b>CPS Test</b><span>Measure your mouse clicks per second</span></a>
+</div><h2 id="faq">Frequently asked questions</h2><details><summary>How do I stop the endless spacebar counter?</summary><p>Press Enter, press Esc or click the Stop button. Your result card appears straight away.</p></details>
+<details><summary>Is there a maximum count?</summary><p>No. Endless mode keeps counting until you stop, and timed runs go up to 600 seconds using the Custom box.</p></details>
+<details><summary>Can two people play on the same device?</summary><p>Yes. Use Endless mode for a relay, or take turns on the same timed mode and compare the recent runs list.</p></details>
+<details><summary>Do my counts carry over between pages?</summary><p>No. The Spacebar Counter keeps its own bests and history, separate from the Spacebar Clicker and the CPS Test.</p></details></article></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot">
+      <div>
+        <a class="logo" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><rect x="1" y="1" width="32" height="18" rx="5" fill="var(--brand)"/><rect x="1" y="1" width="32" height="15" rx="5" fill="var(--brand-2)"/><rect x="9" y="7" width="16" height="3" rx="1.5" fill="#fff"/></svg><span>Spacebar Clicker</span></a>
+        <p>Free browser tools to measure how fast you can press the spacebar or click a mouse. No sign-up, no download.</p>
+      </div>
+      <div><p class="foot-h">Tools</p><ul>
+        <li><a href="/">Spacebar Clicker</a></li>
+        <li><a href="/spacebar-counter">Spacebar Counter</a></li>
+        <li><a href="/cps-test">CPS Test</a></li>
+      </ul></div>
+      <div><p class="foot-h">Guides</p><ul>
+        <li><a href="/how-to-press-spacebar-faster">Press the spacebar faster</a></li>
+        <li><a href="/good-spacebar-cps">What is a good CPS?</a></li>
+        <li><a href="/keyboard-and-spacebar-speed">Keyboards and speed</a></li>
+      </ul></div>
+      <div><p class="foot-h">Site</p><ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+      </ul></div>
+    </div>
+    <div class="copy"><span>© <span id="year">2026</span> Spacebar Clicker</span><span>Made for fast fingers everywhere</span></div>
+  </div>
+</footer>
+<script src="/main.js" defer></script>
+<script src="/clicker.js" defer></script>
+</body>
+</html>

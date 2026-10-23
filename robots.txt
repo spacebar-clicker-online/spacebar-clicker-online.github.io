@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spacebar-clicker-online.github.io/sitemap.xml

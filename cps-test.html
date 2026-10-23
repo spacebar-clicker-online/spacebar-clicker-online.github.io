@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CPS Test – Check Your Mouse Clicks Per Second</title>
+<meta name="description" content="Free CPS test for mouse clicking speed. Choose 1 to 100 seconds, click the box as fast as you can and get your clicks per second, best second and consistency.">
+<link rel="canonical" href="https://spacebar-clicker-online.github.io/cps-test">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="Spacebar Clicker">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CPS Test – Check Your Mouse Clicks Per Second">
+<meta property="og:description" content="Free CPS test for mouse clicking speed. Choose 1 to 100 seconds, click the box as fast as you can and get your clicks per second, best second and consistency.">
+<meta property="og:url" content="https://spacebar-clicker-online.github.io/cps-test">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#6a3cf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem("sbc_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="/style.css">
+<!-- Google AdSense: paste your AdSense <script> tag here after you sign up -->
+<!-- Google Analytics (optional): paste your gtag.js snippet here -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Spacebar Clicker","url":"https://spacebar-clicker-online.github.io/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"CPS Test","url":"https://spacebar-clicker-online.github.io/cps-test","applicationCategory":"GameApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Measures mouse clicks per second over timed runs."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a good CPS for a mouse?","acceptedAnswer":{"@type":"Answer","text":"Around 6 to 8 CPS is typical with normal clicking. Above 10 is fast, and above 14 usually needs a jitter or butterfly technique."}},{"@type":"Question","name":"Does right-clicking count?","acceptedAnswer":{"@type":"Answer","text":"No. Only left clicks (or taps on a touch screen) are counted."}},{"@type":"Question","name":"Why do my clicks sometimes count double?","acceptedAnswer":{"@type":"Answer","text":"Some mice develop a fault where one press registers as two. If your total jumps unexpectedly, your mouse switch may be wearing out."}},{"@type":"Question","name":"Is the CPS test the same as the spacebar test?","acceptedAnswer":{"@type":"Answer","text":"It uses the same timing and the same result card, but it counts mouse clicks instead of key presses, and it keeps its own personal bests."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spacebar-clicker-online.github.io/"},{"@type":"ListItem","position":2,"name":"CPS Test","item":"https://spacebar-clicker-online.github.io/cps-test"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><rect x="1" y="1" width="32" height="18" rx="5" fill="var(--brand)"/><rect x="1" y="1" width="32" height="15" rx="5" fill="var(--brand-2)"/><rect x="9" y="7" width="16" height="3" rx="1.5" fill="#fff"/></svg><span>Spacebar Clicker</span></a>
+    <nav aria-label="Main"><ul class="menu" id="menu"><li><a href="/">Spacebar Clicker</a></li><li><a href="/spacebar-counter">Spacebar Counter</a></li><li><a href="/cps-test" aria-current="page">CPS Test</a></li><li><a href="/guides">Guides</a></li><li><a href="/about">About</a></li></ul></nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / CPS Test</nav><div class="hero"><div class="eyebrow">Mouse click speed</div><h1>CPS Test</h1><p class="lede">Click inside the box as fast as you can. The timer starts on your first click and you get the same detailed result card as the spacebar test, measured for your mouse.</p></div><section class="tool" id="tool" data-mode="mouse" data-default="5" data-key="cps" aria-label="Mouse click speed test">
+  <div class="modes" role="group" aria-label="Test duration">
+    <span class="modes-label">Time</span><button class="chip" type="button" data-t="1" aria-pressed="false">1s</button><button class="chip" type="button" data-t="5" aria-pressed="true">5s</button><button class="chip" type="button" data-t="10" aria-pressed="false">10s</button><button class="chip" type="button" data-t="15" aria-pressed="false">15s</button><button class="chip" type="button" data-t="30" aria-pressed="false">30s</button><button class="chip" type="button" data-t="60" aria-pressed="false">60s</button><button class="chip" type="button" data-t="100" aria-pressed="false">100s</button>
+    <span class="custom"><label for="customSec">Custom</label><input id="customSec" type="number" min="1" max="600" placeholder="sec" inputmode="numeric"></span>
+    <span class="toggles"><button class="chip" id="soundBtn" type="button" aria-pressed="false">Sound off</button></span>
+  </div>
+  <div class="stats" aria-live="polite">
+    <div class="stat main"><b id="sHits">0</b><span>Clicks</span></div>
+    <div class="stat"><b id="sTime">5.00</b><span id="sTimeLbl">Time left</span></div>
+    <div class="stat"><b id="sCps">0.00</b><span>Live CPS</span></div>
+    <div class="stat"><b id="sBest">–</b><span id="sBestLbl">Best CPS</span></div>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+  <div class="stage">
+    <div class="pad mouse" id="pad" role="button" tabindex="0" aria-label="Click area. Click here as fast as you can."><span class="legend" id="legend">Click <em>here</em> to start</span></div>
+    <p class="hint">The timer starts on your first click. Use the left mouse button or tap on a touch screen. <kbd>Enter</kbd> restarts.</p>
+  </div>
+  <div class="actions">
+    <button class="btn primary" id="restartBtn" type="button">Restart <small>(Enter)</small></button>
+    <button class="btn" id="stopBtn" type="button" hidden>Stop</button>
+    <button class="btn" id="copyBtn" type="button" hidden>Copy score</button>
+  </div>
+  <div class="result" id="result" hidden>
+    <div class="result-head">
+      <div class="rank"><span id="rankName">–</span><small id="rankSub"></small></div>
+      <span class="badge" id="pbBadge" hidden>New personal best</span>
+    </div>
+    <div class="stats">
+      <div class="stat main"><b id="rHits">0</b><span>Total clicks</span></div>
+      <div class="stat"><b id="rCps">0.00</b><span>Average CPS</span></div>
+      <div class="stat"><b id="rPeak">0</b><span>Best 1 second</span></div>
+      <div class="stat"><b id="rCons">0%</b><span>Consistency</span></div>
+    </div>
+    <div class="chart-box">
+      <canvas id="chart" role="img" aria-label="Clicks per second during your run"></canvas>
+      <p class="chart-cap">Clicks in each second of your run. Even bars mean a steady pace; falling bars show where your hand tired.</p>
+    </div>
+    <div class="ladder" id="ladder" aria-label="Speed ranks"></div>
+  </div>
+</section>
+<div class="panels">
+  <section class="card"><h2>Your personal bests</h2><div id="bestsBox"></div></section>
+  <section class="card"><h2>Recent runs</h2><div id="historyBox"></div><button class="linkbtn" id="clearBtn" type="button">Clear my scores</button></section>
+</div>
+<article class="content">
+<h2>What CPS means</h2>
+<p>CPS stands for clicks per second. Take the number of clicks you made and divide by the length of the test. Forty clicks in five seconds is 8 CPS. In games where you attack, build or mine by clicking, a higher CPS means more actions in the same amount of time, which is why players test and train it.</p>
+
+<h2>Clicking techniques</h2>
+<p>How you click matters more than how hard you try. These are the common styles, from easiest to most demanding:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Technique</th><th>How it works</th><th>Typical CPS</th></tr></thead>
+<tbody>
+<tr><td><strong>Normal clicking</strong></td><td>One finger presses and releases the button in the usual way.</td><td class="num">5–8</td></tr>
+<tr><td><strong>Two-finger</strong></td><td>Index and middle fingers alternate on the same button.</td><td class="num">8–12</td></tr>
+<tr><td><strong>Jitter</strong></td><td>You tense your forearm so the finger vibrates quickly on the button.</td><td class="num">10–14</td></tr>
+<tr><td><strong>Butterfly</strong></td><td>Two fingers tap the button in quick alternation, like wings.</td><td class="num">12–20</td></tr>
+<tr><td><strong>Drag</strong></td><td>A finger slides across the button so friction makes it register many times.</td><td class="num">20+</td></tr>
+</tbody></table></div>
+<p>Jitter clicking puts strain on the forearm and wrist, and drag clicking wears out mouse buttons. If you try them, keep the runs short. Some games and servers also treat butterfly and drag clicking as unfair, so check the rules before using them in competition.</p>
+
+<h2>Mouse CPS vs spacebar CPS</h2>
+<p>Most people click a mouse slightly faster than they press a spacebar. A mouse button travels a shorter distance and your index finger is quicker than your thumb. On the other hand, the spacebar is easier to hit with two thumbs in turn. If you compare your score here with your <a href="/">Spacebar Clicker</a> score for the same time mode, you will usually find the mouse ahead by one or two CPS.</p>
+
+<h2>Tips for a better CPS score</h2>
+<ul>
+<li>Rest the heel of your hand on the desk and keep the mouse still. Movement wastes energy and can drag the pointer out of the box.</li>
+<li>Click near the front of the button, where it needs the least force.</li>
+<li>Warm up with a couple of 5-second runs before trying for a record.</li>
+<li>If your mouse registers two clicks for one press, it may have a worn switch. That is called double-clicking and it will inflate your score.</li>
+</ul>
+<p>Right-clicks are ignored, and the right-click menu is disabled inside the box so it can't interrupt a run.</p>
+<div class="grid-links">
+<a href="/"><b>Spacebar Clicker</b><span>Timed spacebar speed test with live CPS</span></a>
+<a href="/spacebar-counter"><b>Spacebar Counter</b><span>Count every press with no time limit</span></a>
+<a href="/cps-test"><b>CPS Test</b><span>Measure your mouse clicks per second</span></a>
+</div><h2 id="faq">Frequently asked questions</h2><details><summary>What is a good CPS for a mouse?</summary><p>Around 6 to 8 CPS is typical with normal clicking. Above 10 is fast, and above 14 usually needs a jitter or butterfly technique.</p></details>
+<details><summary>Does right-clicking count?</summary><p>No. Only left clicks (or taps on a touch screen) are counted.</p></details>
+<details><summary>Why do my clicks sometimes count double?</summary><p>Some mice develop a fault where one press registers as two. If your total jumps unexpectedly, your mouse switch may be wearing out.</p></details>
+<details><summary>Is the CPS test the same as the spacebar test?</summary><p>It uses the same timing and the same result card, but it counts mouse clicks instead of key presses, and it keeps its own personal bests.</p></details></article></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot">
+      <div>
+        <a class="logo" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><rect x="1" y="1" width="32" height="18" rx="5" fill="var(--brand)"/><rect x="1" y="1" width="32" height="15" rx="5" fill="var(--brand-2)"/><rect x="9" y="7" width="16" height="3" rx="1.5" fill="#fff"/></svg><span>Spacebar Clicker</span></a>
+        <p>Free browser tools to measure how fast you can press the spacebar or click a mouse. No sign-up, no download.</p>
+      </div>
+      <div><p class="foot-h">Tools</p><ul>
+        <li><a href="/">Spacebar Clicker</a></li>
+        <li><a href="/spacebar-counter">Spacebar Counter</a></li>
+        <li><a href="/cps-test">CPS Test</a></li>
+      </ul></div>
+      <div><p class="foot-h">Guides</p><ul>
+        <li><a href="/how-to-press-spacebar-faster">Press the spacebar faster</a></li>
+        <li><a href="/good-spacebar-cps">What is a good CPS?</a></li>
+        <li><a href="/keyboard-and-spacebar-speed">Keyboards and speed</a></li>
+      </ul></div>
+      <div><p class="foot-h">Site</p><ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+      </ul></div>
+    </div>
+    <div class="copy"><span>© <span id="year">2026</span> Spacebar Clicker</span><span>Made for fast fingers everywhere</span></div>
+  </div>
+</footer>
+<script src="/main.js" defer></script>
+<script src="/clicker.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spacebar Clicker – Free Spacebar Speed Test with Live CPS</title>
+<meta name="description" content="Test how fast you can press the spacebar. Pick 1 to 100 seconds, watch live CPS, see a per-second chart and beat your personal best. Free, no sign-up.">
+<link rel="canonical" href="https://spacebar-clicker-online.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:site_name" content="Spacebar Clicker">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spacebar Clicker – Free Spacebar Speed Test with Live CPS">
+<meta property="og:description" content="Test how fast you can press the spacebar. Pick 1 to 100 seconds, watch live CPS, see a per-second chart and beat your personal best. Free, no sign-up.">
+<meta property="og:url" content="https://spacebar-clicker-online.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#6a3cf0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem("sbc_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="/style.css">
+<!-- Google AdSense: paste your AdSense <script> tag here after you sign up -->
+<!-- Google Analytics (optional): paste your gtag.js snippet here -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Spacebar Clicker","url":"https://spacebar-clicker-online.github.io/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Spacebar Clicker","url":"https://spacebar-clicker-online.github.io/","applicationCategory":"GameApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Online spacebar clicker that measures spacebar presses per second with timed and endless modes."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a spacebar clicker?","acceptedAnswer":{"@type":"Answer","text":"A spacebar clicker is a browser test that counts how many times you press the spacebar in a set time and turns that into clicks per second (CPS)."}},{"@type":"Question","name":"Does holding the spacebar count as clicks?","acceptedAnswer":{"@type":"Answer","text":"No. Auto-repeat from a held key is ignored. Only separate presses are counted, so every hit on the board is a real tap."}},{"@type":"Question","name":"Why is my score lower in long tests?","acceptedAnswer":{"@type":"Answer","text":"Your thumb muscles tire and your rhythm drifts. It is normal to lose 10 to 25 percent of your opening speed over 30 to 60 seconds."}},{"@type":"Question","name":"Can I use the spacebar clicker on a phone?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tap the large on-screen key. Touch taps are counted the same way as keyboard presses."}},{"@type":"Question","name":"Are my results saved?","acceptedAnswer":{"@type":"Answer","text":"Your best score for each time mode and your last 10 runs are stored in your browser only. Clearing your browser data or pressing Clear my scores removes them."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no sign-up, no download and no limit on how many times you can play."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><rect x="1" y="1" width="32" height="18" rx="5" fill="var(--brand)"/><rect x="1" y="1" width="32" height="15" rx="5" fill="var(--brand-2)"/><rect x="9" y="7" width="16" height="3" rx="1.5" fill="#fff"/></svg><span>Spacebar Clicker</span></a>
+    <nav aria-label="Main"><ul class="menu" id="menu"><li><a href="/" aria-current="page">Spacebar Clicker</a></li><li><a href="/spacebar-counter">Spacebar Counter</a></li><li><a href="/cps-test">CPS Test</a></li><li><a href="/guides">Guides</a></li><li><a href="/about">About</a></li></ul></nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch light or dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="container"><div class="hero"><div class="eyebrow">Free spacebar speed test</div><h1>Spacebar Clicker</h1><p class="lede">Pick a time, press Space to start and tap as fast as you can. You get live clicks per second, your fastest single second, a consistency score and a chart of every second of your run.</p></div><section class="tool" id="tool" data-mode="space" data-default="10" data-key="sbc" aria-label="Spacebar speed test">
+  <div class="modes" role="group" aria-label="Test duration">
+    <span class="modes-label">Time</span><button class="chip" type="button" data-t="1" aria-pressed="false">1s</button><button class="chip" type="button" data-t="5" aria-pressed="false">5s</button><button class="chip" type="button" data-t="10" aria-pressed="true">10s</button><button class="chip" type="button" data-t="15" aria-pressed="false">15s</button><button class="chip" type="button" data-t="30" aria-pressed="false">30s</button><button class="chip" type="button" data-t="60" aria-pressed="false">60s</button><button class="chip" type="button" data-t="100" aria-pressed="false">100s</button><button class="chip" type="button" data-t="0" aria-pressed="false">Endless</button>
+    <span class="custom"><label for="customSec">Custom</label><input id="customSec" type="number" min="1" max="600" placeholder="sec" inputmode="numeric"></span>
+    <span class="toggles"><button class="chip" id="soundBtn" type="button" aria-pressed="false">Sound off</button></span>
+  </div>
+  <div class="stats" aria-live="polite">
+    <div class="stat main"><b id="sHits">0</b><span>Hits</span></div>
+    <div class="stat"><b id="sTime">10.00</b><span id="sTimeLbl">Time left</span></div>
+    <div class="stat"><b id="sCps">0.00</b><span>Live CPS</span></div>
+    <div class="stat"><b id="sBest">–</b><span id="sBestLbl">Best CPS</span></div>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+  <div class="stage">
+    <div class="pad" id="pad" role="button" tabindex="0" aria-label="Spacebar. Press Space on your keyboard or tap here."><span class="legend" id="legend">Press <em>space</em> to start</span></div>
+    <p class="hint">The timer starts on your first press. Holding the key does not count. On a phone or tablet, tap the key. <kbd>Enter</kbd> restarts.</p>
+  </div>
+  <div class="actions">
+    <button class="btn primary" id="restartBtn" type="button">Restart <small>(Enter)</small></button>
+    <button class="btn" id="stopBtn" type="button" hidden>Stop</button>
+    <button class="btn" id="copyBtn" type="button" hidden>Copy score</button>
+  </div>
+  <div class="result" id="result" hidden>
+    <div class="result-head">
+      <div class="rank"><span id="rankName">–</span><small id="rankSub"></small></div>
+      <span class="badge" id="pbBadge" hidden>New personal best</span>
+    </div>
+    <div class="stats">
+      <div class="stat main"><b id="rHits">0</b><span>Total hits</span></div>
+      <div class="stat"><b id="rCps">0.00</b><span>Average CPS</span></div>
+      <div class="stat"><b id="rPeak">0</b><span>Best 1 second</span></div>
+      <div class="stat"><b id="rCons">0%</b><span>Consistency</span></div>
+    </div>
+    <div class="chart-box">
+      <canvas id="chart" role="img" aria-label="Hits per second during your run"></canvas>
+      <p class="chart-cap">Hits in each second of your run. Even bars mean a steady pace; falling bars show where your hand tired.</p>
+    </div>
+    <div class="ladder" id="ladder" aria-label="Speed ranks"></div>
+  </div>
+</section>
+<div class="panels">
+  <section class="card"><h2>Your personal bests</h2><div id="bestsBox"></div></section>
+  <section class="card"><h2>Recent runs</h2><div id="historyBox"></div><button class="linkbtn" id="clearBtn" type="button">Clear my scores</button></section>
+</div>
+<article class="content">
+<h2 id="how">How to use the spacebar clicker</h2>
+<ol>
+<li><strong>Choose a time.</strong> 10 seconds is the standard test most people compare. Use 1 or 5 seconds for a pure burst, 30 to 100 seconds for stamina, or type any length from 1 to 600 seconds in the Custom box.</li>
+<li><strong>Press Space once.</strong> The clock does not move until your first press, so you never lose time reaching for the keyboard.</li>
+<li><strong>Tap until the bar fills.</strong> The hit counter and live CPS update on every press.</li>
+<li><strong>Read your result card.</strong> It shows your rank, total hits, average CPS, your best single second, how steady you were and a bar chart of every second.</li>
+<li><strong>Press Enter to go again.</strong> Each time mode keeps its own personal best, so a 1-second burst never competes with a 60-second run.</li>
+</ol>
+<p>On a phone or tablet there is no spacebar, so the big on-screen key does the same job. Tap it with one or two thumbs.</p>
+
+<h2>What each number on the result card means</h2>
+<p>Most spacebar testers only show a total and an average. This one breaks your run down so you can see why the score came out the way it did.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Number</th><th>What it tells you</th></tr></thead>
+<tbody>
+<tr><td><strong>Hits</strong></td><td>Every separate press of the spacebar inside the time limit. A key that is held down counts once.</td></tr>
+<tr><td><strong>Average CPS</strong></td><td>Hits divided by seconds. This is the figure people usually mean when they quote a score.</td></tr>
+<tr><td><strong>Best 1 second</strong></td><td>The most presses you landed inside any one-second window during the run. It shows your top speed even if you slowed down later.</td></tr>
+<tr><td><strong>Consistency</strong></td><td>How even your pace was from second to second, out of 100. A high number means a steady rhythm; a low number means bursts and dips.</td></tr>
+<tr><td><strong>Per-second chart</strong></td><td>One bar per second. A slope downward toward the end is fatigue. A dip in the middle usually means you lost your rhythm or shifted your hand.</td></tr>
+</tbody></table></div>
+
+<h2>Which test length should you pick?</h2>
+<p>Speed and stamina are different skills. Short tests reward a fast twitch; long ones reward a relaxed hand that can hold a pace. Use the length that matches what you want to measure.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Mode</th><th>Best for</th><th>What to expect</th></tr></thead>
+<tbody>
+<tr><td class="num">1s</td><td>Raw burst speed</td><td>Very swingy. One extra tap moves your CPS by a full point, so run it several times.</td></tr>
+<tr><td class="num">5s</td><td>Quick challenges with friends</td><td>Close to your top speed with almost no fatigue.</td></tr>
+<tr><td class="num">10s</td><td>The standard score</td><td>The fairest single number for comparing with other people.</td></tr>
+<tr><td class="num">15s–30s</td><td>Speed with some stamina</td><td>Most people lose 10 to 20 percent of their opening pace.</td></tr>
+<tr><td class="num">60s–100s</td><td>Endurance</td><td>Pacing matters more than speed. Your chart will show where your hand tired.</td></tr>
+<tr><td>Endless</td><td>Counting only</td><td>No time limit. Stop with Enter or the Stop button. See the <a href="/spacebar-counter">Spacebar Counter</a> for more counting modes.</td></tr>
+</tbody></table></div>
+
+<h2>How your score compares</h2>
+<p>For a 10-second test, most first attempts land between 5 and 7 presses per second. Regular players reach 8 to 10, and anything above 12 held for the full 10 seconds is rare. Expect lower numbers in long tests and higher ones in 1-second bursts. Our guide on <a href="/good-spacebar-cps">what counts as a good spacebar CPS</a> lists ranges for every test length.</p>
+
+<h2>Quick tips before your next run</h2>
+<ul>
+<li><strong>Tap, don't push.</strong> The key only has to travel a couple of millimetres to register. Lift off as soon as it clicks.</li>
+<li><strong>Use the side of your thumb</strong> and rest your wrist on the desk so the thumb is the only thing moving.</li>
+<li><strong>Try two thumbs.</strong> Alternating left and right thumbs lets each one recover between presses.</li>
+<li><strong>Start at 90 percent in long tests.</strong> An all-out start usually costs more at the end than it gains at the beginning.</li>
+<li><strong>Practise little and often.</strong> A few runs a day improves rhythm faster than one long session that leaves your hand sore.</li>
+</ul>
+<p>The full walkthrough, with a seven-day practice plan, is in <a href="/how-to-press-spacebar-faster">how to press the spacebar faster</a>.</p>
+
+<h2>Fair counting</h2>
+<p>When you hold a key down, your computer starts sending repeated key signals after a short delay. This tool ignores those repeats, so holding the spacebar adds nothing. Only a full press and release counts as a hit. Timing uses the browser's high-precision clock rather than the regular clock, so the result is accurate to well under a millisecond.</p>
+<div class="note"><strong>Your scores stay on your device.</strong> Personal bests and recent runs are saved in your own browser. Nothing is uploaded, and the Clear button removes them.</div>
+
+<h2>More free tools</h2>
+<div class="grid-links">
+<a href="/"><b>Spacebar Clicker</b><span>Timed spacebar speed test with live CPS</span></a>
+<a href="/spacebar-counter"><b>Spacebar Counter</b><span>Count every press with no time limit</span></a>
+<a href="/cps-test"><b>CPS Test</b><span>Measure your mouse clicks per second</span></a>
+</div><h2 id="faq">Frequently asked questions</h2><details><summary>What is a spacebar clicker?</summary><p>A spacebar clicker is a browser test that counts how many times you press the spacebar in a set time and turns that into clicks per second (CPS).</p></details>
+<details><summary>Does holding the spacebar count as clicks?</summary><p>No. Auto-repeat from a held key is ignored. Only separate presses are counted, so every hit on the board is a real tap.</p></details>
+<details><summary>Why is my score lower in long tests?</summary><p>Your thumb muscles tire and your rhythm drifts. It is normal to lose 10 to 25 percent of your opening speed over 30 to 60 seconds.</p></details>
+<details><summary>Can I use the spacebar clicker on a phone?</summary><p>Yes. Tap the large on-screen key. Touch taps are counted the same way as keyboard presses.</p></details>
+<details><summary>Are my results saved?</summary><p>Your best score for each time mode and your last 10 runs are stored in your browser only. Clearing your browser data or pressing Clear my scores removes them.</p></details>
+<details><summary>Is it free?</summary><p>Yes. There is no sign-up, no download and no limit on how many times you can play.</p></details></article></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot">
+      <div>
+        <a class="logo" href="/"><svg viewBox="0 0 34 22" aria-hidden="true"><rect x="1" y="1" width="32" height="18" rx="5" fill="var(--brand)"/><rect x="1" y="1" width="32" height="15" rx="5" fill="var(--brand-2)"/><rect x="9" y="7" width="16" height="3" rx="1.5" fill="#fff"/></svg><span>Spacebar Clicker</span></a>
+        <p>Free browser tools to measure how fast you can press the spacebar or click a mouse. No sign-up, no download.</p>
+      </div>
+      <div><p class="foot-h">Tools</p><ul>
+        <li><a href="/">Spacebar Clicker</a></li>
+        <li><a href="/spacebar-counter">Spacebar Counter</a></li>
+        <li><a href="/cps-test">CPS Test</a></li>
+      </ul></div>
+      <div><p class="foot-h">Guides</p><ul>
+        <li><a href="/how-to-press-spacebar-faster">Press the spacebar faster</a></li>
+        <li><a href="/good-spacebar-cps">What is a good CPS?</a></li>
+        <li><a href="/keyboard-and-spacebar-speed">Keyboards and speed</a></li>
+      </ul></div>
+      <div><p class="foot-h">Site</p><ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+      </ul></div>
+    </div>
+    <div class="copy"><span>© <span id="year">2026</span> Spacebar Clicker</span><span>Made for fast fingers everywhere</span></div>
+  </div>
+</footer>
+<script src="/main.js" defer></script>
+<script src="/clicker.js" defer></script>
+</body>
+</html>
